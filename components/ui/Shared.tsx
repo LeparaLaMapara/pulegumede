@@ -17,10 +17,15 @@ export const Divider: React.FC<{ light?: boolean; className?: string }> = ({ lig
 );
 
 // --- Button ---
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+type ButtonProps = {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
   children: React.ReactNode;
-}
+  href?: string;
+  className?: string;
+} & (
+  | (React.ButtonHTMLAttributes<HTMLButtonElement> & { href?: undefined })
+  | (React.AnchorHTMLAttributes<HTMLAnchorElement> & { href: string })
+);
 
 export const Button: React.FC<ButtonProps> = ({ variant = 'primary', children, className = '', ...props }) => {
   const baseStyles = "px-8 py-3 uppercase tracking-widest text-xs font-semibold transition-all duration-300 ease-out flex items-center justify-center gap-2";
@@ -32,10 +37,21 @@ export const Button: React.FC<ButtonProps> = ({ variant = 'primary', children, c
     ghost: "text-muted hover:text-gold"
   };
 
+  if (props.href) {
+    return (
+      <a 
+        className={`${baseStyles} ${variants[variant]} ${className}`}
+        {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
     <button 
       className={`${baseStyles} ${variants[variant]} ${className}`}
-      {...props}
+      {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
     >
       {children}
     </button>

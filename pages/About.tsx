@@ -19,6 +19,7 @@ export const About: React.FC = () => {
       <CTASection 
         title="Let's make your financial goals a reality." 
         btnText="Book A Consultation" 
+        btnHref="https://wa.me/0659026716"
         secondaryBtn={true}
       />
     </main>

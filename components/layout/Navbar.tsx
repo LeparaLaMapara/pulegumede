@@ -6,8 +6,8 @@ const NAV_ITEMS = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/#services' },
-  { label: 'Insights', href: '/#insights' },
-  { label: 'Contact', href: '/#contact' },
+  { label: 'Resume', href: '../cv.pdf', external: true },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export const Navbar: React.FC = () => {
@@ -32,15 +32,27 @@ export const Navbar: React.FC = () => {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {NAV_ITEMS.map((item) => (
-            <RouterLink
-              key={item.label}
-              to={item.href}
-              className={`text-xs uppercase tracking-widest transition-colors duration-300 border-b-2 border-transparent hover:border-gold pb-1 ${
-                isActive(item.href) ? 'text-gold border-gold' : 'text-muted hover:text-cream'
-              }`}
-            >
-              {item.label}
-            </RouterLink>
+            item.external ? (
+              <a
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs uppercase tracking-widest transition-colors duration-300 border-b-2 border-transparent hover:border-gold pb-1 text-muted hover:text-cream"
+              >
+                {item.label}
+              </a>
+            ) : (
+              <RouterLink
+                key={item.label}
+                to={item.href}
+                className={`text-xs uppercase tracking-widest transition-colors duration-300 border-b-2 border-transparent hover:border-gold pb-1 ${
+                  isActive(item.href) ? 'text-gold border-gold' : 'text-muted hover:text-cream'
+                }`}
+              >
+                {item.label}
+              </RouterLink>
+            )
           ))}
         </nav>
 
@@ -61,14 +73,27 @@ export const Navbar: React.FC = () => {
       >
         <div className="flex flex-col gap-8 items-center">
            {NAV_ITEMS.map((item) => (
-            <RouterLink
-              key={item.label}
-              to={item.href}
-              onClick={() => setIsOpen(false)}
-              className="font-serif text-2xl text-cream hover:text-gold transition-colors"
-            >
-              {item.label}
-            </RouterLink>
+            item.external ? (
+              <a
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="font-serif text-2xl text-cream hover:text-gold transition-colors"
+              >
+                {item.label}
+              </a>
+            ) : (
+              <RouterLink
+                key={item.label}
+                to={item.href}
+                onClick={() => setIsOpen(false)}
+                className="font-serif text-2xl text-cream hover:text-gold transition-colors"
+              >
+                {item.label}
+              </RouterLink>
+            )
           ))}
         </div>
       </div>

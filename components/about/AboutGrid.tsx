@@ -2,7 +2,7 @@ import React from 'react';
 
 const CARDS = [
   {
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1287&auto=format&fit=crop",
+    image: "/images/pule.jpg",
     title: "My Journey",
     text: "From small-town dreams to financial expert."
   },

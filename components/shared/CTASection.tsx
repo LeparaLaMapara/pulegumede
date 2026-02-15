@@ -5,10 +5,12 @@ import { ChevronDown } from 'lucide-react';
 export const CTASection: React.FC<{ 
   title?: string; 
   btnText?: string; 
+  btnHref?: string;
   secondaryBtn?: boolean 
 }> = ({ 
   title = "Ready to take control of your financial future?", 
   btnText = "Schedule Your Strategy Session",
+  btnHref = "https://wa.me/0659026716",
   secondaryBtn = false
 }) => {
   return (
@@ -25,7 +27,7 @@ export const CTASection: React.FC<{
         </h2>
         
         <div className="flex flex-col sm:flex-row justify-center gap-6">
-          <Button variant="primary" className="min-w-[240px]">
+          <Button variant="primary" className="min-w-[240px]" href={btnHref} target="_blank">
             {btnText}
           </Button>
           {secondaryBtn && (

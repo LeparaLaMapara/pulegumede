@@ -28,7 +28,7 @@ export const MeetSection: React.FC = () => {
         
         <div className="max-w-2xl mx-auto text-center mb-16">
           <p className="font-serif text-2xl md:text-3xl leading-snug text-charcoal/80 italic">
-            "I help clients build wealth, protect their assets, and plan for a secure future with precision and care."
+            "I aspire to help clients build wealth, protect their assets, and plan for a secure future with precision and care."
           </p>
         </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { GrainOverlay, Button } from '../ui/Shared';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -31,15 +31,15 @@ export const Hero: React.FC = () => {
             <span className="text-gold italic">One Client At A Time</span>
           </h1>
           <p className="font-sans text-muted text-lg leading-relaxed mb-10 max-w-md border-l-2 border-gold/30 pl-6">
-            I empower individuals and businesses to achieve financial clarity, security, and freedom through strategic foresight.
+            Financial planning is not just a job to me it’s my calling and my life’s work. I would truly value the opportunity to connect. Please feel free to give me a call so we can have a chat over a cup of coffee.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="primary">
+            <Button variant="primary" href="https://wa.me/0659026716" target="_blank">
               Book Your Consultation
             </Button>
-            <Button variant="secondary">
-              Explore My Insights <ArrowRight size={16} />
+            <Button variant="secondary" href="/cv.pdf" target="_blank" download>
+              Download Resume <Download size={16} />
             </Button>
           </div>
         </div>
@@ -50,7 +50,7 @@ export const Hero: React.FC = () => {
         {/* Placeholder for Man in Suit */}
         <div className="relative h-full w-full flex items-end justify-center md:justify-start">
              <img 
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574&auto=format&fit=crop" 
+              src="/images/headshot.jpeg" 
               alt="Pule Financial Advisor"
               className="max-h-[85vh] object-cover object-top md:object-center mask-image-bottom"
               style={{

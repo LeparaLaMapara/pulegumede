@@ -3,13 +3,13 @@ import { SectionHeading, Divider } from '../ui/Shared';
 
 const TESTIMONIALS = [
   {
-    quote: "Pule transformed my financial future! His strategic approach gave me clarity I never had before.",
-    author: "Sarah M.",
+    quote: "During his time shadowing our advisory team, Pule showed strong administrative discipline and respect for client confidentiality. He took initiative in preparing meeting notes, reviewing financial needs analyses, and understanding regulatory requirements. He carries himself with maturity beyond his years.",
+    author: "Cody.",
     role: "Business Owner"
   },
   {
-    quote: "The best advisor I’ve ever worked with. A true partner in wealth generation.",
-    author: "James K.",
+    quote: "Pule demonstrated exceptional curiosity and professionalism during his job-shadowing period. He consistently asked insightful questions about financial planning strategies and compliance processes. His eagerness to learn and ability to grasp complex concepts quickly sets him apart as a future leader in the financial services industry..",
+    author: "Shawn Selepe",
     role: "Real Estate Investor"
   }
 ];
@@ -24,7 +24,7 @@ export const TrustedSection: React.FC = () => {
 
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 border border-charcoal/10 bg-white/50 text-xs font-bold tracking-widest uppercase">
-            Resident of the Year 2024 | Positive Impact Award
+            #1 Sales Person in 2024 | #4 Sales Person in 2023
           </span>
         </div>
 
