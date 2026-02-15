@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pule | Financial Mentorship</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              charcoal: '#101214',
+              secondary: '#171A1F',
+              cream: '#F2EEE6',
+              gold: '#C9A24A',
+              'gold-light': '#D4B36A',
+              muted: '#B9B3AA',
+              'divider-light': 'rgba(242,238,230,0.18)',
+              'divider-dark': 'rgba(16, 18, 20, 0.1)',
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Inter"', 'sans-serif'],
+            },
+            letterSpacing: {
+              widest: '0.2em',
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #101214;
+        color: #F2EEE6;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar for premium feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #101214;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #C9A24A;
+      }
+      .text-shadow-sm {
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
