@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
             Premium Financial Advisory
           </p>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-7xl leading-[1.1] text-cream mb-8">
-            Turning Vision <br />
+           Health Id Wealth<br />
             Into Wealth — <br />
             <span className="text-gold italic">One Client At A Time</span>
           </h1>
