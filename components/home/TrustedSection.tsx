@@ -5,12 +5,12 @@ const TESTIMONIALS = [
   {
     quote: "During his time shadowing our advisory team, Pule showed strong administrative discipline and respect for client confidentiality. He took initiative in preparing meeting notes, reviewing financial needs analyses, and understanding regulatory requirements. He carries himself with maturity beyond his years.",
     author: "Cody.",
-    role: "Business Owner"
+    role: "Business Executive"
   },
   {
     quote: "Pule demonstrated exceptional curiosity and professionalism during his job-shadowing period. He consistently asked insightful questions about financial planning strategies and compliance processes. His eagerness to learn and ability to grasp complex concepts quickly sets him apart as a future leader in the financial services industry..",
     author: "Shawn Selepe",
-    role: "Real Estate Investor"
+    role: "Financial Advisor"
   }
 ];
 
