@@ -36,7 +36,7 @@ export const Hero: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button variant="primary" href="https://wa.me/0659026716" target="_blank">
-              Book Your Consultation
+             Let Have a Chat
             </Button>
             <Button variant="secondary" href="/cv.pdf" target="_blank" download>
               Download Resume <Download size={16} />
