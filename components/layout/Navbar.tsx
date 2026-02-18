@@ -25,7 +25,7 @@ export const Navbar: React.FC = () => {
             <h1 className="font-serif text-2xl tracking-wide text-cream group-hover:text-gold transition-colors">
               PULE
             </h1>
-            <span className="text-[10px] uppercase tracking-[0.3em] text-gold">Advisor</span>
+            <span className="text-[10px] uppercase tracking-[0.3em] text-gold">Aspiring Financial Advisor</span>
           </RouterLink>
         </div>
 
